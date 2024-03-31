@@ -2,6 +2,8 @@ package com.spring.bbsController;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,10 +20,21 @@ import com.spring.bbsCommand.ReplyFormCmd;
 import com.spring.bbsCommand.WriteCmd;
 import com.spring.bbsCommand.updatebGroupCmd;
 import com.spring.bbsVO.BVO;
+import com.spring.template.StaticTemplate;
 
 @Controller
 public class BController {
 	Bcmd cmd = null;
+	
+	private JdbcTemplate template;
+	
+	@Autowired //(설정한 빈 사용)
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+		//스프링에서 인스턴스로 만들어 놓은 템플릿을 StaticTemplate에 등록. (메모리에 공유)
+		//그럼 다른 클래스에서 저(StaticTemplate 클래스) 템플릿을 참조 가능
+		StaticTemplate.template = this.template;
+	}
 	
 	//게시판 목록 부분
 	@RequestMapping("/list")
