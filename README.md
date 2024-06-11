@@ -3,14 +3,11 @@
 #### 개발 환경
 운영체제 : windows10
 
-개발 도구 : STS4
-
-버전
-
-1. JavaSE-11
-2. 데이터베이스 : MySQL 8.0.34 (connector-j-8.0.33)
-3. WAS : Apache Tomcat 9.0
-4. Bootsorap5 v5.3 (기본 테이블로 보기에는 너무 밋밋해서 사용)
+1. STS4
+2. JavaSE-11
+3. 데이터베이스 : MySQL 8
+4. WAS : Apache Tomcat 9.0
+5. Bootsorap5 (기본 테이블로 보기에는 너무 밋밋해서 사용)
 ---
 만든 기간(중간 저장) : 2024-03-24 ~ 2024-03-28
 
