@@ -1,13 +1,13 @@
 ## 스프링 프레임워크 이용한 게시판 (공부)
 ---
 #### 개발 환경
-운영체제 : windows10
 
-1. STS4
-2. JavaSE-11
-3. 데이터베이스 : MySQL 8
-4. WAS : Apache Tomcat 9.0
-5. Bootsorap5 (기본 테이블로 보기에는 너무 밋밋해서 사용)
+1. 운영체제 : windows10
+2.  STS4
+3. JavaSE-11
+4. 데이터베이스 : MySQL 8
+5. WAS : Apache Tomcat 9.0
+6. Bootsorap5 (기본 테이블로 보기에는 너무 밋밋해서 사용)
 ---
 만든 기간(중간 저장) : 2024-03-24 ~ 2024-03-28
 
